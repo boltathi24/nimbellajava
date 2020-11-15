@@ -15,9 +15,9 @@ public class FetchScore
 		Gson gson = new Gson(); 
 		JsonObject response = new JsonObject();
 	    JsonObject headers = new JsonObject();
-	    headers.addProperty("content-type", "text/html; charset=UTF-8");
+	    headers.addProperty("content-type", "application/json; charset=UTF-8");
 	    HashMap<String, String> dbResult=DBUtil.executeQueryForRead("select * from Runs where PlayerName='Sachin Tendulkar'");
-	    response.addProperty("dbResult",gson.toJson(dbResult));
+	    response.addProperty("body",gson.toJson(dbResult));
 	    return response;
 	}
 	
