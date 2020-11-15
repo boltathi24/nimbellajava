@@ -8,7 +8,7 @@ BUILD="maven"
 
 if [ $BUILD == "maven" ]; then
     mvn install
-    echo target/nimc-1.0jar-with-dependencies.jar > .include
+    echo target/nimc-1.0-jar-with-dependencies.jar > .include
 else
     if [ $BUILD == "gradle" ]; then
         gradle jar
