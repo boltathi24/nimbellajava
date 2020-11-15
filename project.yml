@@ -1,0 +1,6 @@
+packages:
+  - name: default
+    actions:
+      - name: CricketScoreApp 
+        runtime: java:default
+        main: playerscore.FetchScore#main
