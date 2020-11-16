@@ -1,6 +1,6 @@
 packages:
-  - name: default
+  - name: cricket
     actions:
-      - name: CricketScoreApp 
+      - name: getplayerstats 
         runtime: java:default
-        main: playerscore.FetchScore#main
+        main: playerdata.GetPlayerData#main
